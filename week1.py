@@ -1,5 +1,5 @@
 #งานสัปดาห์ที่ 1 นางสาวพลอยชมพู รุ่งพิสิฐไชย 633050135-6
-'''
+
 name =input('What is your name ?\n')
 print('Hi,%s'% name)
 print('Welcome to python')
@@ -32,7 +32,6 @@ b = int(y)
 c = complex(x)
 
 print(float(x),int(y),complex(x))
-'''
 
 first =input('Enter first number :')
 print('float of %s equal'%first,float(first))
