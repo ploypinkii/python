@@ -1,3 +1,4 @@
+#งานสัปดาห์ที่ 1 นางสาวพลอยชมพู รุ่งพิสิฐไชย 633050135-6
 '''
 name =input('What is your name ?\n')
 print('Hi,%s'% name)
@@ -32,6 +33,7 @@ c = complex(x)
 
 print(float(x),int(y),complex(x))
 '''
+
 first =input('Enter first number :')
 print('float of %s equal'%first,float(first))
 print('complex of %s equal'%first,complex(first))
@@ -49,6 +51,4 @@ print('float of %s equal'%first,float(five))
 print('complex of %s equal'%first,complex(five))
 
 a =input('Enter number 1 :')
-#b =input('Enter number 2 :')
-#print('a,b')
 print("float of number %s is "%a,float(a))
