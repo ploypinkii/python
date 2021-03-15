@@ -8,7 +8,7 @@ class shop :
     def showshop(self):
         print(i+1,'.',self.products,self.rates,' บาท')
     def show():
-        print('-'*20,'ร้านนายดอม','-'*20)
+        print('-'*20,'ร้านพวยพิ้ง','-'*20)
         print('\tแสดงรายการสินค้า [a]\n\tเพิ่มรายการสินค้า[s]\n\tออกจากระบบ[x]')
 
 while True :

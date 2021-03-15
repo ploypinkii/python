@@ -1,3 +1,6 @@
+import sqlite3 as db
+import sqlite3
+
 ntrack = []
 i = 0
 def index():
@@ -14,7 +17,21 @@ def add():
     else:
         pricereg()
         regtracking()
+'''
+def createdb():
+    conn = sqlite3.connect("ploypinkshipping.db")
+    c = conn.cursor()
+    c.execute('CREATE TABLE IF NOT EXISTS user (sname text,gname text,sprovince text,gprovince text,tracking text)')
+    conn.commit()
+    conn.close()
 
+def addtodb():
+    conn = sqlite3.connect("ploypinkshipping.db")
+    c = conn.cursor()
+    c.execute('INSERT INTO user (sname,gname,sprovince,gprovince,tracking) values (?,?,?,?,?)')
+    conn.commit()
+    conn.close()
+'''
 def priceems():
     print('สาขาปลายทาง\n[3] นครราชสีมา\n[4] กรุงเทพ')
     kk = int(input('เลือกสาขาปลายทาง : '))
@@ -64,6 +81,7 @@ def regtracking():
     print('REG' + str(a) + 'TH')
 
 #finalprogram
+
 while True:
     index()
     choose = input('choose menu : ')
@@ -73,4 +91,7 @@ while True:
             add()
             i+=1
     elif choose == '2':
-        print('0')
+        c.execute ('''SELECT * FROM customers''')
+        result = c.fetchall()
+        for x in result:
+            print(x)
